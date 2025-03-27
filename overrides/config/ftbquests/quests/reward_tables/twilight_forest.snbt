@@ -1,0 +1,12 @@
+{
+	id: "3D1CC8BA763EF0B2"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ item: "create:experience_nugget", random_bonus: 30, weight: 15.0f }
+		{ item: "twilightforest:naga_scale", weight: 0.5f }
+		{ item: "twilightforest:torchberries" }
+		{ item: "twilightforest:raven_feather" }
+	]
+	title: "Twilight Forest"
+}

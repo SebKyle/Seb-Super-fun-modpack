@@ -1,0 +1,100 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_aether"
+	group: "6D20797F116970EA"
+	icon: "aether:aether_portal_frame"
+	id: "33CA6C60D6CEA093"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["If you've played minecraft long enough, you know how to make an Aether portal. Everyone has probably been tricked on their vanilla games as teenagers where they &darrange &aGlowstone Blocks&d like a &6Nether Portal &dand then light it with a bucket of water."]
+			id: "3919E1660C6F704C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "443F4F5CFD09F444"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			tasks: [{
+				id: "107FC7729186D8F0"
+				title: "The Aether?"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3919E1660C6F704C"]
+			description: [
+				"I really don't fucking know, I've flown around in creative there for a bit, but other than that don't have any experience with it."
+				""
+				"I'm doing what any resonable man that is tired of making quests and walking people through minecraft mods I haven't played yet would do."
+				""
+				"&eCopying and pasting the fucking wiki&r"
+				""
+				"{@pagebreak}"
+				"&dThe Aether's world contains three new mysterious dungeons, each with a fearsome boss to defeat..."
+				""
+				"&dThe Bronze Dungeon is the home of the Sentries and guarded by the ominous Slider, a creature born of pure stone. Look out for hidden tunnels through islands and prepare yourself with the best gear you can craft!"
+				""
+				"&dThe Silver Dungeon is the beautiful Valkyrie Temple. Challenge the knights of the Valkyrie Order and, if you prove worthy, fight the Valkyrie Queen herself. Utilize every tool and trick you can to best this ancient warrior. "
+				""
+				"&dWithin the rare Gold Dungeon lies the Sun Spirit, an eternal being of pure fire and energy. He is the God that rules the very Sun itself and will take some convincing to even pay attention to a being such as yourself. But it is rumored he guards some of the best treasure that exists in the Aether."
+			]
+			id: "0A7811CAF384EC27"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D58E764475CBDDC"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			subtitle: "What's Here?"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "5280AB0141DC05DE"
+				type: "dimension"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A7811CAF384EC27"]
+			id: "686A8FE7DCC5FF7E"
+			tasks: [{
+				entity: "aether:slider"
+				id: "7E86DEF872057AB2"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0A7811CAF384EC27"]
+			id: "58B4869122DA4514"
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				id: "692EC6E1310C0F5E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A7811CAF384EC27"]
+			id: "4D7DF25A6EE4708B"
+			tasks: [{
+				entity: "aether:sun_spirit"
+				id: "73870B4ADFD18051"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+	]
+	title: "The Aether"
+}

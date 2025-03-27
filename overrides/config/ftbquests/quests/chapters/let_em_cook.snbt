@@ -1,0 +1,187 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "let_em_cook"
+	group: "77CB9E6C44F4DBD4"
+	icon: "farmersdelight:stove"
+	id: "56E7911454230057"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This is Farmer's Delight, a cooking mod so that you're not doing something like eating bread forever because it's easily sustainable, Instead you can eat burgers and roasted chicken and Kelp Rolls or some shit like that, Whatever you'd like. You can build you a cute little kitchen and cook your heart out in there. This section will help you get through it."]
+			id: "05194B052C716C06"
+			subtitle: "Farmer's Delight"
+			tasks: [{
+				id: "1B8FDDB848F2672C"
+				title: "OwO What's this?"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["05194B052C716C06"]
+			description: ["Put pots and skillets on these"]
+			id: "37A8CA461895CE59"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0AA820817C9102F3"
+				table_id: 5546048485149494411L
+				type: "random"
+			}]
+			tasks: [{
+				id: "34477AF4C96BAD64"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["05194B052C716C06"]
+			description: ["It's used to cook stuff"]
+			id: "76139F6E9AA67498"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C265293BB6EE842"
+				table_id: 5546048485149494411L
+				type: "random"
+			}]
+			tasks: [{
+				id: "21463726374C7DBD"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["05194B052C716C06"]
+			description: [
+				"Chop items up with it, You can hold the ingredient in your off hand and chop up an entire stack quickly if you channel your inner Gordan Ramsey. "
+				""
+				"The knife can be placed on the cutting board for storage"
+			]
+			id: "76B07F96E968DA1E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49A3205BEE521E9E"
+				table_id: 5546048485149494411L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "132D6F58EEDBC196"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "105D90FDA9998C26"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["05194B052C716C06"]
+			description: [
+				"It catches things I think, you maybe can put it under your cutting board for it to fill up with stuff. "
+				""
+				"Play around with it and have fun!"
+			]
+			id: "53AA5627032F39FB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "047336BAA2B99057"
+				table_id: 5546048485149494411L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7625A0D4096B6311"
+				item: "farmersdelight:basket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"37A8CA461895CE59"
+				"76139F6E9AA67498"
+				"76B07F96E968DA1E"
+				"53AA5627032F39FB"
+			]
+			description: [
+				"That's it, That's all you need to get into this mod. Be sure to check out &dNether's Delight&r mod and the &bCooking With Create&r and &bButcher's Delight&r questlines for additional food possiblilities. "
+				""
+				"Here's some stuff and things"
+			]
+			id: "7371C25EAF332679"
+			rewards: [
+				{
+					count: 4
+					id: "45A07CBE2F590AED"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "11A15745AD153014"
+					item: "farmersdelight:basket"
+					type: "item"
+				}
+				{
+					id: "6C3B4FF6F05F9D95"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2B0347B962105603"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2905BF5FA50CF3B4"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1AF8003A7C7EC5BF"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "42A7E954B36EC6C3"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+	]
+	title: "Let Em' Cook"
+}

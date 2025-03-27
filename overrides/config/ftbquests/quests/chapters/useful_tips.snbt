@@ -1,0 +1,382 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "useful_tips"
+	group: "65930474F10080A4"
+	icon: "minecraft:crafting_table"
+	id: "5B0F7B2ECFEA82FC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Building wands are super useful tools for building. "
+				""
+				"with 2 sticks and a piece of cobblestone you can make a stone wand. The stone wand can place 9 blocks for you. If you shift + Scroll you can change the configuration. "
+				""
+				"If you hold a material in your off hand and then right click it will fill in that material. "
+				""
+				"If you have no material in your left hand then it will place the material that is already there. These do have durability and using a iron/diamond/infinity wand will allow you to place more blocks. "
+			]
+			id: "35C016AF6EA795E0"
+			rewards: [{
+				id: "38AB80D6613F1CD0"
+				item: {
+					Count: 1
+					id: "constructionwand:iron_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Building Wands"
+			tasks: [{
+				id: "70EA01C08453FF4A"
+				item: {
+					Count: 1
+					id: "constructionwand:stone_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			description: [
+				"There are two different chisels in this modpack, to keep it simple I would not use the chisel from rechisiled as it just gives blocks different textures, you will have access to much more decrotive blocks from using the actual workstations from the Chipped mod instead and they add to the asthetic of having a workshop. "
+				""
+				"The Chisel from Chisel and bits will let you take tiny chunks out of blocks, so you can make more accurate statues. play around with it and have a little fun!"
+			]
+			id: "336EBDF19BE0E670"
+			rewards: [{
+				id: "69E6FFC39D1BD949"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Chisels"
+			tasks: [{
+				id: "61AB1EB8C05F3E02"
+				item: {
+					Count: 1
+					id: "chiselsandbits:chisel_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			description: ["The Workstations from Rechiseled give you access to an abundance of decorative blocks. That's all they're for. So go make your base look pretty."]
+			id: "4BC6C727EC158D94"
+			rewards: [{
+				id: "597EA0B40CCB02FF"
+				item: "chipped:mason_table"
+				type: "item"
+			}]
+			tasks: [{
+				id: "13BB95FF304692CF"
+				title: "Rechiseled Workstations"
+				type: "checkmark"
+			}]
+			title: "Chipped Workstations"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4BC6C727EC158D94"]
+			description: ["The Masonry Table is going to be used for stone materials like brick cobblestone, stone, ETC"]
+			id: "6B3C2B3C7613A0C2"
+			rewards: [{
+				id: "03949790BF2C81EF"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "0DB0A1138F951237"
+				item: "chipped:mason_table"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4BC6C727EC158D94"]
+			id: "0652D4B8DA878CFE"
+			rewards: [{
+				id: "3CCE6C142FA1E5D8"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "6E55813E9D5C57E2"
+				item: "chipped:botanist_workbench"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4BC6C727EC158D94"]
+			description: ["If you can't tell what this one is for, just go ahead and log out for me."]
+			id: "3D62AD7EBCC29563"
+			rewards: [{
+				id: "794D3EE41917824B"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "76A8DC2B373E80B1"
+				item: "chipped:glassblower"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4BC6C727EC158D94"]
+			description: ["Wood stuff"]
+			id: "3C5FFC0F9498A8AA"
+			rewards: [{
+				id: "5DB701DA7407695C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "52CD4ECF4DA279D0"
+				item: "chipped:carpenters_table"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4BC6C727EC158D94"]
+			description: ["Wool and Carpet Materials"]
+			id: "1FE3189449B7FD15"
+			rewards: [{
+				id: "084E925016678546"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "182C4112961DD48F"
+				item: "chipped:loom_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4BC6C727EC158D94"]
+			description: ["Amethyst, Coal, Lapis, ETC"]
+			id: "147BB4840A390970"
+			rewards: [{
+				id: "56A14DA3C04AFA33"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "3DC69B9B57DCD668"
+				item: "chipped:alchemy_bench"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4BC6C727EC158D94"]
+			description: ["Light Sources and Redstone Blocks"]
+			id: "16C372C84A3975CB"
+			rewards: [{
+				id: "1EC41956CFC923FD"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "14BEC75911CF4B36"
+				item: "chipped:tinkering_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"You ever think, \"How am I going to equip all this stuff I want to equip and still have armor on?\" Boy do I have news for you. You have extra slots called \"Curios\" which you can equip your artifacts and engineer goggles into. "
+				""
+				"The default key for it is \"G\" but you can also access it from your inventory. &4 READ THE NEXT PAGE"
+				""
+				"{@pagebreak}"
+				"&f I don't know how to put pictures but I would. The other curios slot for the aether is located in the bottom left corner of your character icon in your inventory. Whenever I figure out how to add the pictures I will."
+			]
+			icon: {
+				Count: 1
+				id: "aether:diamond_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1C0FAA439AF64E91"
+			rewards: [{
+				id: "244DA788B3E614D9"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "There's two Places"
+			tasks: [{
+				id: "685FC7D1FC1E204A"
+				title: "Curios"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			description: ["In this modpack there is &6Macaw's Bridges&f, &6Maca's windows&f, &6 Macaw's Trapdoors&f, &6 Macaw's roofs&f, &6 Macaw's doors&f, etc. They are all mods that give decorative blocks, you should check them out, at the very least build some of the cherry bridges to get this sick ass reward"]
+			id: "594367D4D845AA44"
+			rewards: [{
+				id: "29BDCDB1D4D592A6"
+				item: "mcwbridges:pliers"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "There's a Decent Amount"
+			tasks: [{
+				id: "343D55536339C760"
+				item: "mcwbridges:cherry_log_bridge_middle"
+				type: "item"
+			}]
+			title: "Macaw's mods"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			description: ["The market from farming for blockheads offers a number of saplings and seeds if you can't seem to find them in all of your travels. Try making one and see what they have to offer!"]
+			id: "73C01A4091F3C070"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40969D12437EE41E"
+				table_id: 3361774562512003194L
+				type: "choice"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Can't Find Seeds/Saplings?"
+			tasks: [{
+				id: "52F59F97D54D7B6B"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			description: ["The Nature's compass helps you locate biomes, it's pretty fucking cool if you ask me. Can't find the deep dark to go to the otherside? this will help. You didn't want to build a market because you thought it would be too easy to get saplings and you want to find a cherry forest? Nature's compass can help. "]
+			id: "1FE829C06441E06E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F0C266BD6D5DC50"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Can't find the Deep dark?"
+			tasks: [{
+				id: "4630F76F629ABD2B"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"&6Torch Master &ris in this mod pack, which means you have access to &aFeral Flare Lanterns&r. Check out their stuff, some of it's cool. "
+				""
+				"Don't like ugly torches around your base? No problem. &6Torch Master &rhas you covered."
+			]
+			icon: "torchmaster:feral_flare_lantern"
+			id: "2CD2812FBDED2364"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29BEEBCEC322B5DE"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "6E93D0DE6CDB1492"
+				title: "Torch Master"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			description: ["&6Comforts &ris in this modpack, so you can make a &asleeping bag&r, It's made by using 3 &awool&r of the same color, like a &abed&r without the wood part. &eThese let you sleep without resetting your spawn."]
+			icon: "comforts:hammock_white"
+			id: "3ED7EE298790A2CE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EF0DB267D83662E"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "2E732B152F29A5C9"
+				title: "Comforts"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"&6Immersive paintings&r is in this pack, it's super cool. It lets you upload pictures as your paintings so you can have a painting of tony hawk in your house if you want, Want some anime girls on your wall in your house? That's possible too"
+				""
+				"Just get the painting put it on a wall and right-click on it. It's pretty easy to figure out."
+			]
+			id: "14E491522AF3232A"
+			rewards: [{
+				id: "27E8C871DBFFEEDD"
+				item: "immersive_paintings:painting"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 5.0d
+			subtitle: "Immersive paintings"
+			tasks: [{
+				id: "68FC6798BD2AD3A3"
+				title: "Best Mod in the Pack"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+	]
+	title: "Useful tips"
+}

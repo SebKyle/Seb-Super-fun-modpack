@@ -1,0 +1,122 @@
+{
+	"groupOverrides": {
+	  "Vanilla Seeds": {
+		"enabled": true
+	  },
+	  "Vanilla Saplings": {
+		"payment": {
+		  "item": "minecraft:emerald",
+		  "count": 1
+		}
+	  }
+	},
+	"entryOverrides": {
+	  "minecraft:oak_sapling": {
+		"enabled": true
+	  },
+	  "minecraft:bone_meal": {
+		"amount": 1 
+	  }
+	},
+	"customCategories": {
+	  "deeperdarker": {
+		"name": "Deeper and Darker",
+		"icon": {
+		  "item": "deeperdarker:warden_helmet"
+		}
+	  },	 
+	   "machines": {
+		"name": "Crafting Machines",
+		"icon": {
+		  "item": "createoreexcavation:drilling_machine"
+		}
+	  }
+	},
+	"customEntries": [
+	  {
+		"output": {
+		  "item": "deeperdarker:echo_sapling"
+		},
+		"payment": {
+		  "item": "minecraft:emerald"
+		},
+		"category": "deeperdarker"
+	  },
+	  {
+		"output": {
+		  "item": "deeperdarker:gloomy_cactus"
+		},
+		"payment": {
+		  "item": "minecraft:emerald",
+		  "count": 1
+		},
+		"category": "deeperdarker"
+	  },
+	  {
+		"output": {
+		  "item": "minecraft:kelp"
+		},
+		"payment": {
+		  "item": "minecraft:emerald",
+		  "count": 1
+		}
+	  },
+	  {
+		"output": {
+		  "item": "deeperdarker:gloomy_sculk"
+		},
+		"payment": {
+		  "item": "minecraft:emerald",
+		  "count": 1
+		},
+		"category": "deeperdarker"
+	  },
+	  {
+		"output": {
+		  "item": "deeperdarker:warden_upgrade_smithing_template"
+		},
+		"payment": {
+		  "item": "deeperdarker:reinforced_echo_shard",
+		  "count": 5
+		}
+	  } ,
+	  {
+		"output": {
+		  "item": "blue_skies:alchemy_table"
+		},
+		"payment": {
+		  "item": "blue_skies:charoite",
+		  "count": 64
+		},
+		"category": "machines"
+	  },
+	  {
+		"output": {
+		  "item": "createoreexcavation:vein_finder"
+		},
+		"payment": {
+		  "item": "minecraft:netherite_scrap",
+		  "count": 2
+		},
+		"category": "machines"
+	  },
+	  {
+		"output": {
+		  "item": "minecraft:bamboo"
+		},
+		"payment": {
+		  "item": "minecraft:emerald",
+		  "count": 1
+		}
+	  },
+	  {
+		"output": {
+		  "item": "minecraft:cactus"
+		},
+		"payment": {
+		  "item": "minecraft:emerald",
+		  "count": 1
+		}
+	  }
+
+	]}

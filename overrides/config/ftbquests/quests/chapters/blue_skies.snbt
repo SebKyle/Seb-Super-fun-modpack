@@ -1,0 +1,659 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blue_skies"
+	group: "6D20797F116970EA"
+	icon: "blue_skies:poison_key"
+	id: "7739373308A83503"
+	images: [{
+		height: 1.0d
+		image: "blue_skies:block/misc/blue_fire_1"
+		rotation: 0.0d
+		width: 0.03125d
+		x: 5.5d
+		y: -4.0d
+	}]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&9Blue Skies&r adds 2 new dimensions, both filled with new blocks, creatures, and a total of 4 bosses."
+				""
+				"To get started, we need to find the &6Gatekeeper&r!"
+			]
+			icon: "blue_skies:poison_key"
+			id: "79B9098FE66A7130"
+			rewards: [{
+				id: "3FD56ECB72F0B314"
+				item: "create:experience_nugget"
+				random_bonus: 9
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "03EA78EF53B95F0F"
+				title: "Welcome to Blue Skies!"
+				type: "checkmark"
+			}]
+			title: "Aren't All Skies Blue?"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["79B9098FE66A7130"]
+			description: [
+				"Gatekeeping isn't just something in online communities, There's a Gatekeeper for this mod and he literally keeps the gate. "
+				""
+				"Generated in the Overworld, you'll find two simple houses."
+				""
+				"Buy the &aBlue Journel&r and &aZeal lighter&r from the guy that lives here."
+			]
+			icon: "blue_skies:blue_journal"
+			id: "198EB5AE0E18E6C3"
+			rewards: [{
+				id: "3E34B92B094794C5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0C6C12DEFB35A5C8"
+				item: "blue_skies:blue_journal"
+				type: "item"
+			}]
+			title: "Finding the Gatekeeper"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["198EB5AE0E18E6C3"]
+			description: [
+				"The Gatekeeper knows all about the dimensions of Blue Skies. As you progress through the mod, the &9Blue Journal&r will expand to help guide you."
+				""
+				"He'll also trade more items as you advance through the dimensions, so check back in with him."
+			]
+			id: "7DC798518DDAAD26"
+			rewards: [{
+				id: "7DF96ABE84AF6A0D"
+				item: "create:experience_nugget"
+				random_bonus: 9
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A4F2611944EF2EE"
+				title: "The Knowledge of the Gatekeeper"
+				type: "checkmark"
+			}]
+			title: "He knows some stuff"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["198EB5AE0E18E6C3"]
+			description: [
+				"Within the Gatekeeper's smaller house, you might stumble upon what looks to be a broken portal."
+				""
+				"Acquire a &6Zeal Lighter&r and use it to light the portal. "
+			]
+			icon: {
+				Count: 1
+				id: "blue_skies:zeal_lighter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "13BB7347D271D29C"
+			rewards: [{
+				id: "52FBDC26FCFF2617"
+				item: "create:experience_nugget"
+				random_bonus: 9
+				type: "item"
+			}]
+			tasks: [{
+				id: "5971D3F2F9D07D81"
+				item: {
+					Count: 1
+					id: "blue_skies:zeal_lighter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["13BB7347D271D29C"]
+			description: [
+				"It seems you have stumbled your way into the world of &9Everbright&r."
+				""
+				"It's always bright and there's even a few bosses."
+			]
+			id: "765EBF99FFF4061F"
+			rewards: [{
+				id: "3B84D7E7630E9368"
+				item: "create:experience_nugget"
+				random_bonus: 9
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "blue_skies:everbright/enter"
+				criterion: ""
+				id: "083086610639994F"
+				title: "To &9Everbright&r!"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["13BB7347D271D29C"]
+			description: ["Welcome to the world of &6Everdawn&r, the world where the sun is always rising"]
+			id: "20ECBCF42E1B0660"
+			rewards: [{
+				id: "3528CD54C7BB509F"
+				item: "create:experience_nugget"
+				random_bonus: 9
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "blue_skies:everdawn/enter"
+				criterion: ""
+				id: "10AA43B1500FAAAA"
+				title: "To &6Everdawn&r!"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"765EBF99FFF4061F"
+				"20ECBCF42E1B0660"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Overworld Tools don't work here. Get new stuff nerd"]
+			id: "4365BCF6B7A91D24"
+			rewards: [
+				{
+					count: 4
+					id: "53BEE6AAB2F03835"
+					item: "blue_skies:starlit_log"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "530DA15F48BD1B9D"
+					item: "minecraft:golden_apple"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "763F402C717F7CA3"
+				title: "OwO"
+				type: "checkmark"
+			}]
+			title: "Something isn't quite right....."
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4365BCF6B7A91D24"]
+			description: ["Go from wood to stone. Craft the Mining tool"]
+			id: "3E1A86A6D2155B53"
+			rewards: [
+				{
+					id: "5B8EB3A3A85BCF39"
+					item: "create:experience_nugget"
+					random_bonus: 10
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50041A6C745FBBE7"
+					table_id: 3361774562512003194L
+					type: "choice"
+				}
+			]
+			subtitle: "First Wood, then Stone... then.. what?"
+			tasks: [{
+				id: "5C3378B5E42D6690"
+				title: "UwU"
+				type: "checkmark"
+			}]
+			title: "Getting an Upgrade"
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3E1A86A6D2155B53"]
+			description: [
+				"Pyrope tools are like the gold tools of &6Blue Skies&r"
+				""
+				"These tools are weak, but fast."
+				""
+				"\"I am speed\" - Lightning McQueen"
+			]
+			icon: "blue_skies:pyrope_gem"
+			id: "01E1A7BCDAE8EB9F"
+			rewards: [{
+				count: 2
+				id: "5F8E399B85FEDD35"
+				item: "blue_skies:pyrope_gem"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 3L
+				id: "11A420F02EC037AF"
+				item: "blue_skies:pyrope_gem"
+				type: "item"
+			}]
+			title: "Cachow"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E1A86A6D2155B53"]
+			description: [
+				"Going into Caves, you'll find &9Aquite Ore&r."
+				""
+				"Mine enough to make you some starter tools. You'll need these to mine the higher tier Blue Skies ores."
+				""
+				"From here, you probably want to find some of the better materials to make some better weapons and armor."
+				""
+				"NOTE: The best weapon in the pack is probably the warden sword, I think? I'm not too sure."
+			]
+			id: "158F48B73171BDE1"
+			rewards: [{
+				count: 3
+				id: "346B685A9F2FB23C"
+				item: "blue_skies:raw_aquite"
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "78CAF1897A5DE4F1"
+				item: "blue_skies:aquite"
+				type: "item"
+			}]
+			title: "Metal Tools"
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["158F48B73171BDE1"]
+			description: [
+				"The green gemstone &aDiopside&r. "
+				""
+				"It's slow, but it make do damage."
+			]
+			id: "128C5B7A82FF802E"
+			rewards: [{
+				count: 3
+				id: "4F49AA2B32B815A7"
+				item: "blue_skies:diopside_gem"
+				random_bonus: 3
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 3L
+				id: "290B4D50053FDD52"
+				item: "blue_skies:diopside_gem"
+				type: "item"
+			}]
+			title: "Diopside"
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E1A86A6D2155B53"]
+			description: [
+				"Ventium is a red metal found in most non-mountainous biomes in Everbright."
+				""
+				"It's like iron, but can only be used to make buckets, Shears, and the &6Tool Box&r."
+			]
+			id: "229455730219F7B1"
+			rewards: [
+				{
+					count: 2
+					id: "6484F144DBD5D526"
+					item: "blue_skies:ventium_ingot"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EBE9E3E514BC83D"
+					item: "blue_skies:brewberry"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Red Iron"
+			tasks: [{
+				id: "6A4963E01802CAD5"
+				item: "blue_skies:ventium_ingot"
+				type: "item"
+			}]
+			title: "&cVentium"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E1A86A6D2155B53"]
+			description: [
+				"Falsite Ore can be found inside the non-mountainous biomes of Everbright."
+				""
+				"Using the &aTool Box&r, you can add extra duribility to most tools"
+			]
+			id: "23CC5B8D9AAD4E12"
+			rewards: [
+				{
+					count: 2
+					id: "2C4262BD556B1C00"
+					item: "blue_skies:falsite_ingot"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5DF0422AC1172ACF"
+					item: "blue_skies:black_brewberry"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				count: 2L
+				id: "05F5918E96F08D87"
+				item: "blue_skies:falsite_ingot"
+				type: "item"
+			}]
+			title: "&9Falsite"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["158F48B73171BDE1"]
+			description: [
+				"This is the Diamond of Blue Skies. "
+				""
+				"Tools made from Charoite can mine anything in Blue Skies."
+			]
+			id: "27E3C4E4790F8FF3"
+			rewards: [
+				{
+					count: 2
+					id: "1B4867AB14B95E52"
+					item: "blue_skies:charoite"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "24339FEBEFB2C4B5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4082CD21223CF655"
+				item: "blue_skies:raw_charoite"
+				type: "item"
+			}]
+			title: "Charoite"
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E1A86A6D2155B53"]
+			description: [
+				"Found in the Crystal Dunes."
+				""
+				"Horizionite tools come with &6Auto-Smelt&r."
+				""
+				"This can also be used to make the &6Horizonite Forge&r."
+			]
+			id: "14B4E6B2FC3F6B36"
+			rewards: [{
+				count: 2
+				id: "28205BCCFAFEFF65"
+				item: "blue_skies:raw_horizonite"
+				random_bonus: 3
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "57A208055A02E13B"
+				item: "blue_skies:horizonite_ingot"
+				type: "item"
+			}]
+			title: "&6Horizonite"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["158F48B73171BDE1"]
+			description: [
+				"Whether you started in Everbright or Everdawn, you'll want to search for a tower structure. There's bosses here."
+				""
+				"In the smaller parts of the tower, there's loot and you need to get some &aBlinding Dungeon Keys&r. "
+				""
+				"Deep within the dungeon, you'll find a doorway with a lock on it. Use 4 of the Blinding Dungeon Keys to unlock the boss fight."
+				""
+				"Note: The boss will drop an Arc. These can be equipped in a special tab in your inventory. There are 4 Arcs in total."
+			]
+			id: "1F82DBE75059C139"
+			rewards: [
+				{
+					count: 2
+					id: "620F4C05A26A73F6"
+					item: "blue_skies:blinding_key"
+					type: "item"
+				}
+				{
+					id: "5B4473CC52EC9B4B"
+					item: "farmersdelight:beef_stew"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "5749D038B3245D00"
+				item: "blue_skies:blinding_key"
+				type: "item"
+			}]
+			title: "&9The Starter Dungeons"
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["158F48B73171BDE1"]
+			description: [
+				"In Blue Skies, there are 4 bosses to defeat and several dungeons to explore."
+				""
+				"You can find random \"tunnels\" that lead down into dungeon rooms. These will spawn in Armored Frost Spirits to kill. Collect a few of these for Souls!"
+			]
+			id: "001C4388146BD377"
+			rewards: [
+				{
+					count: 2
+					id: "3283AF344E12196F"
+					item: "blue_skies:soul_fragment"
+					type: "item"
+				}
+				{
+					id: "1307942F62236FD8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				count: 5L
+				id: "1F25F2E80A98D691"
+				item: "blue_skies:soul_fragment"
+				type: "item"
+			}]
+			title: "Structures and Dungeons"
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F82DBE75059C139"]
+			description: [
+				"Deep within the Tower of Everbright, you'll find the Summoner."
+				""
+				"This boss will use lightning, energy attacks, and of course he summons. It's Golem Guards, Good luck."
+			]
+			icon: "blue_skies:summoner_spawn_egg"
+			id: "3C1212AA4663C39B"
+			rewards: [{
+				count: 2
+				id: "1F4A260D67396ADE"
+				item: "blue_skies:blinding_key"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "He's In The Everbright Tower"
+			tasks: [{
+				entity: "blue_skies:summoner"
+				icon: "blue_skies:summoner_spawn_egg"
+				id: "1CBF0C7F2044EA9A"
+				title: "&5The Summoner"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F82DBE75059C139"]
+			description: [
+				"In the Everdawn Tower, you'll find the Alchemist boss fight. You need &aBlinding Dungeon Keys&r to unlock the door."
+				""
+				"Prepare to be hit with potions, as well as fighting the minions of the Alchemist."
+				""
+				"He's called The Alchemist, so be prepared to get hit with some potions, He might have minions too, I don't know. Just have fun. You're almost done with the pack."
+			]
+			icon: "blue_skies:alchemist_spawn_egg"
+			id: "6832C9E6D2E2949E"
+			rewards: [
+				{
+					count: 2
+					id: "64DFFAE6EDFBB774"
+					item: "blue_skies:blinding_key"
+					type: "item"
+				}
+				{
+					id: "602A2A65D001D6C5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "square"
+			tasks: [{
+				entity: "blue_skies:alchemist"
+				icon: "blue_skies:alchemist_spawn_egg"
+				id: "19DF62F00979AEA2"
+				title: "&5The Alchemist"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3C1212AA4663C39B"]
+			description: [
+				"You'll find the Nature's Dungeon within Everbright. It's huge, like fucking massive."
+				""
+				"Get some Nature Dungeon Keys within the maze of the structure to unlock the boss fight."
+				""
+				"Note: You can trade with the Gatekeeper in case you can't find all of the keys, but only after you right click the gate for the boss fight."
+			]
+			id: "1F944EEA0F397B95"
+			rewards: [
+				{
+					id: "6ADAEDC20BA5F4B4"
+					item: "blue_skies:nature_key"
+					type: "item"
+				}
+				{
+					id: "1B225AB864CE1DD5"
+					item: {
+						Count: 1
+						id: "blue_skies:soulbound_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				entity: "blue_skies:starlit_crusher"
+				icon: "blue_skies:starlit_crusher_spawn_egg"
+				id: "6F7A953BDE02EF55"
+				title: "&5The Starlit Crusher"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["6832C9E6D2E2949E"]
+			description: [
+				"In the Everdawn, there will be a giant dead tree with a bunch of spider webs covering it."
+				""
+				"Get some &aPoison Dungeon Keys&r within to do the final boss fight. "
+			]
+			id: "0DB1A5763EDD6A7F"
+			rewards: [
+				{
+					id: "0A97CD80345C9AC7"
+					item: "blue_skies:poison_key"
+					type: "item"
+				}
+				{
+					id: "21453E50048FCEE9"
+					item: {
+						Count: 1
+						id: "blue_skies:crushing_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				entity: "blue_skies:arachnarch"
+				icon: "blue_skies:arachnarch_spawn_egg"
+				id: "1F70E547B959D9A0"
+				title: "&5The Arachnarch"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.0d
+			y: 4.5d
+		}
+	]
+	title: "Blue Skies"
+}

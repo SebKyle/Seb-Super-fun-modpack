@@ -1,0 +1,135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "drilling_with_create"
+	group: "6BD94EB5F8108C50"
+	icon: "createoreexcavation:drilling_machine"
+	id: "7CBCA1B120EBBC9C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&6Create&r has plenty of ways to automate resources, so why not add another? With the &6Create Ore&r whatever mod you can have unlimited resources by making a fucking drill and then finding a vein. This will produce unlimited resources of whatever type."]
+			id: "68AE4A6DD1F6C11B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47E37A4C690959E1"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			subtitle: "So you want unlimited stuff?"
+			tasks: [{
+				id: "0CF85EF9CE9F4ED5"
+				title: "Unlimited Resources"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["68AE4A6DD1F6C11B"]
+			description: ["you gotta find the veins, so make one of these ore vein finders, it requires a block of redstone ore, so you'll have to have a silktouch pickaxe to get into this mod,"]
+			id: "44F5A76BEB1F983D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D128443CC90438C"
+				table_id: 98382437320343148L
+				type: "loot"
+			}]
+			subtitle: "Finding Veins"
+			tasks: [{
+				id: "4FB9E68925224FA8"
+				item: "createoreexcavation:vein_finder"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["44F5A76BEB1F983D"]
+			description: ["In order to drill, you need a drill. you can just find the spot and then put it down, you don't have to find a certain block, but you do need to find the chunk and put down the drill and power it."]
+			id: "39F74765CC741DCA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36A283F90D4294B6"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			subtitle: "The Drill"
+			tasks: [
+				{
+					id: "29449B0A3C804B3E"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+				{
+					id: "492738F00C6C30B4"
+					item: "createoreexcavation:drill"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["44F5A76BEB1F983D"]
+			description: ["You can get fluids as well, but as of making this it's only water that's available, but you could make one to get a sick ass reward if you want to."]
+			id: "40EF8CBE8DF34AE3"
+			rewards: [
+				{
+					count: 24
+					id: "36503A87C2C4FD3B"
+					item: "create:experience_nugget"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6A3DC090AEFA5C6F"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Getting Fluids"
+			tasks: [
+				{
+					id: "5BFB10E519C1A97F"
+					item: "createoreexcavation:extractor"
+					type: "item"
+				}
+				{
+					id: "7A108B2044D7A233"
+					item: "createoreexcavation:drill"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39F74765CC741DCA"]
+			dependency_requirement: "all_started"
+			description: [
+				"The types of ore you can get from the &6Drilling Machine&r are: &a Lapis, Raw Redstone, Nether quartz, Glowstone dust, Raw Gold, Coal, Ancient Debris, Raw Diamond, Raw Copper, Raw Zinc, Raw Emerald, Raw Iron &r"
+				""
+				"In order to process the &aRaw Redstone&r you will need to crush or mill it, Crushing it with&6 Crushing Wheels&r will produce 4 &aRedstone dust&r and milling it will produce 3 "
+				""
+				"You will need to use a &6 Mechanical Saw&r to process the &aRaw diamond&r and&a Raw Emerald"
+			]
+			id: "5941EB3981846ED3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40FDC8DA4B9849D1"
+				table_id: 3361774562512003194L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1FD6C545B1E0E2BB"
+				title: "Types of ores you can farm"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+	]
+	title: "Drilling With Create"
+}

@@ -1,0 +1,31 @@
+{
+	id: "68D9FABDA4330E96"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ item: "ad_astra:cheese", weight: 1.5f }
+		{ item: "ad_astra:cryo_fuel_bucket", weight: 0.01f }
+		{ item: "ad_astra:lunarian_wandering_trader_spawn_egg", weight: 0.01f }
+		{ item: "ad_astra:steel_door" }
+		{ item: "ad_astra:desh_ingot", weight: 0.5f }
+		{ count: 2, item: "ad_astra:steel_ingot", weight: 1.5f }
+		{ item: "ad_astra:steel_cable", weight: 1.25f }
+		{ item: "ad_astra:desh_fluid_pipe" }
+		{ item: "ad_astra:oil_bucket" }
+		{ item: "ad_astra:solar_panel", weight: 0.1f }
+		{
+			item: {
+				Count: 1
+				id: "ad_astra:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 0.5f
+		}
+		{ item: "ad_astra:space_painting", weight: 0.5f }
+		{ item: "ad_astra:steel_plate", random_bonus: 3 }
+		{ item: "ad_astra:energizer", weight: 0.01f }
+	]
+	title: "Ad Astra"
+}

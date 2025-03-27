@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_undergarden"
+	group: "6D20797F116970EA"
+	icon: "undergarden:twistytwig"
+	id: "448055C8C1A678D2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"To access the &dUndergarden&r, the player must construct an &6Undergarden portal&r in the &6Overworld&r &c(portals created in other dimensions such as the Nether and the End do not activate).&r "
+				""
+				"To create the portal, the player must first build a rectangular frame made out of any arrangement of &aStone Bricks, Deepslate Bricks, Depthrock Bricks, and Shiverstone Bricks&r in the shape of a Nether portal."
+				""
+				"To activate the portal, right click on the inner bottom face of the frame while holding the Catalyst."
+				""
+				"&9NOTE: You can use any ammount of the above mentioned materials, so you could make this portal out of nothing but stone bricks if you wanted to."
+			]
+			id: "6F6F5BA6BD2AAA52"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7FB900E6FAD12E5A"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7380069309E458C3"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+			title: "Getting to the Undergarden"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F6F5BA6BD2AAA52"]
+			id: "216DD674D5EDC832"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F6471C72062106C"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "482B17C919FE3BC3"
+				type: "dimension"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["216DD674D5EDC832"]
+			description: [
+				"Honestly, I don't fucking know. I just made the portal and didn't even go through it. I'm trying to rush to complete this mod pack before I get off of a deployment because as soon as I do, i'm swapping PCs and don't want that to fuck something up"
+				""
+				"I'm copying and pasting the wiki description Email me hate if you want. "
+				""
+				"&dBedrock comprises the top and bottom 4 layers in a rough pattern, making the Undergarden 256 blocks high unlike the Nether's 128 or Overworld's 320. The Undergarden is horizontally infinite in the same manner as it is in the 3 vanilla dimensions."
+				""
+				"Locations in the Undergarden correlate to Overworld coordinates, but horizontal Overworld distances are scaled down by a ratio of 4:1 for travel in the Undergarden (half that of the Nether)."
+			]
+			id: "6F535871729088CA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BB68D5AE7924616"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			subtitle: "What's here?"
+			tasks: [{
+				id: "45DF9A4785561BA4"
+				title: "Uhhhh"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+	]
+	title: "The Undergarden"
+}

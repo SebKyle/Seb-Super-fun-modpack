@@ -1,0 +1,212 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sophisticated_storage"
+	group: "0B32FF226FE8C3EB"
+	icon: {
+		Count: 1
+		id: "sophisticatedstorage:diamond_chest"
+		tag: {
+			accentColor: 11546150
+			mainColor: 11546150
+		}
+	}
+	id: "1774E3D7C37452EE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"while you DON'T have to use this mod (Or any mod in the pack that is), &6Sophisticated storage&r is just like &6Sophisticated  backpacks&r and have most of the same upgrade, but i'm only going to give you rewards for the important one. "
+				""
+				"Most of your storage is more than likely going to be with the &6Storage Drawers&r mod because it's easier to sort with trains and stuff, "
+				""
+				"&6Sophisticated storage&r is simple, it makes chests hold lots of items, especially whenever you add in the &astack upgrades&r. There's no reason for this mod to be in this mod pack other than to give you options "
+				""
+				"The &aItem vault&r from the &6Create&r mod will work better, but you can't manually open them and look at the items in it, so this is to just give you options."
+			]
+			id: "4403F18C4C715FB7"
+			rewards: [{
+				count: 11
+				id: "5A6D71E87C526535"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				id: "376BA4D53B99F97B"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4403F18C4C715FB7"]
+			description: ["The &aTier upgrades&r are useful because you can just right click on a storage item (barrel or chest) and make it into a &6Sophisticated&r version of the item. You can also craft them directly, but this is the easiest way to install the upgrades."]
+			id: "187DD67EEBB01724"
+			rewards: [{
+				id: "61F86218B1EEEA8C"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B035117B06CCB84"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["187DD67EEBB01724"]
+			id: "362D6BB1433F21CD"
+			rewards: [{
+				id: "60EC7FB11D868A53"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2627620FDBF40F17"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["362D6BB1433F21CD"]
+			id: "2E35E9F0260C0BCC"
+			rewards: [{
+				id: "193F18AAF53A7AE8"
+				item: "sophisticatedstorage:basic_to_gold_tier_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D7100E7D3BD3608"
+				item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E35E9F0260C0BCC"]
+			id: "119536A82FEF22BD"
+			rewards: [{
+				id: "07232DBE0E99C7C8"
+				item: "sophisticatedstorage:basic_to_diamond_tier_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D5581E129A5EA99"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["119536A82FEF22BD"]
+			id: "344B58472AA3F10A"
+			rewards: [{
+				id: "49F8459C98224D4C"
+				item: "sophisticatedstorage:basic_to_netherite_tier_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3ADA78A0508338FC"
+				item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4403F18C4C715FB7"]
+			description: ["To make the upgrades, you have to make the &aUpgrade Base&r. After this you can just type &d@sophisticatedstorage&r in JEI and look at the upgrades that are all possible, It should be mostly the same as the &6Sophisticated Backpacks&r upgrades"]
+			id: "7E6774F4649D7C18"
+			rewards: [{
+				count: 10
+				id: "6979B784DE5511BA"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F2C043FDD6DEEB1"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E6774F4649D7C18"]
+			id: "7E289BBA91689FFE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F8C9CCAB07A7EB0"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			tasks: [{
+				id: "73593A358BCEAC6E"
+				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E289BBA91689FFE"]
+			id: "29798B73C7DB3303"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EDF1772ECA4D73D"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3B18709BA6C47000"
+				item: "sophisticatedstorage:stack_upgrade_tier_2"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29798B73C7DB3303"]
+			id: "171022B2000D80BE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1916A59EA0FBAF3A"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			tasks: [{
+				id: "097450E3100CA7D9"
+				item: "sophisticatedstorage:stack_upgrade_tier_3"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["171022B2000D80BE"]
+			id: "2325034A3B1C2E36"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24EB116E6FDFC407"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			tasks: [{
+				id: "19B93E907D743BE7"
+				item: "sophisticatedstorage:stack_upgrade_tier_4"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "Sophisticated Storage"
+}

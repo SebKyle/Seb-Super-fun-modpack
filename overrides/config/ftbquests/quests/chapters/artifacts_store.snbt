@@ -1,0 +1,55 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "artifacts_store"
+	group: "65930474F10080A4"
+	icon: "artifacts:kitty_slippers"
+	id: "482967C13032BF16"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Hate RNG? Sometimes I do too, this is a VERY expensive store for you to get the specific Artifacts you want from the Artifacts mod. "
+				""
+				"It's going to cost a stack of Modular Disel Engines to buy them, so you'll have to have brass, blacksone, copper, etc automated."
+			]
+			id: "453941D318A9873B"
+			rewards: [{
+				count: 5
+				id: "2E19AD6AD2D636C8"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F0E3055636664D8"
+				title: "The Store"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["453941D318A9873B"]
+			description: ["Some of these Items you will find in the world, so don't worry about how expensive it is, this is to just give the option of getting them late game whenever you have a lot of your stuff up and running and just can't seem to find the artifact you want. "]
+			id: "532EF0A39110A8D6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29BC2232749D840A"
+				table_id: 105103401194979354L
+				type: "choice"
+			}]
+			subtitle: "Pay the Money"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "6737D668A8605AFC"
+				item: "createdieselgenerators:large_diesel_engine"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+	]
+	title: "Artifacts Store"
+}

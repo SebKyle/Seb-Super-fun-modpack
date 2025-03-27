@@ -1,0 +1,15 @@
+{
+	id: "4CF785B6886DCC8B"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "butchersdelight:dead_cow" }
+		{ item: "butchersdelight:deadpig" }
+		{ item: "butchersdelight:deadsheep" }
+		{ item: "butchersdelight:deadchiken" }
+		{ item: "butchersdelight:deadrabbitbrown" }
+		{ item: "butchersdelight:deadllama" }
+		{ item: "butchersdelight:deadgoat" }
+	]
+	title: "Food"
+}

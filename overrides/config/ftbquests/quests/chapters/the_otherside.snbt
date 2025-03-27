@@ -1,0 +1,136 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_otherside"
+	group: "6D20797F116970EA"
+	icon: {
+		Count: 1
+		id: "deeperdarker:warden_helmet"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5CC843D2CED0FE52"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The Otherside is a place I honestly don't know shit about, The deep dark is fucking scary, but to access The Otherside, the player must &6locate an Ancient City &f and ignite the Otherside Portal in the center with a &6Heart of The Deep."
+				""
+				"&4It is worth noting that all Sculk Veins must be cleared from the inner frame of the portal in order to ignite."
+			]
+			id: "230ABAA1E3570238"
+			subtitle: "Red hot Chilli Peppers Reference?"
+			tasks: [{
+				id: "608C3D2585C2FC90"
+				title: "How to get there"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["230ABAA1E3570238"]
+			id: "7C48E509C4A41A0B"
+			tasks: [{
+				id: "20479C967E39E4E1"
+				structure: "minecraft:ancient_city"
+				title: "Lets Get there"
+				type: "structure"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C48E509C4A41A0B"]
+			description: ["The key to the Otherside is a warden's heart, you'll have to kill one to get it, or find another way. The heart could be in the loot table, but i'm not sure, so do both and get rewarded. "]
+			id: "6FA42430E05023D7"
+			rewards: [{
+				id: "4D7B871B51F923E0"
+				item: "deeperdarker:heart_of_the_deep"
+				type: "item"
+			}]
+			subtitle: "The Key"
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "2B498752F9D1115E"
+				title: "The Key to the Portal"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7C48E509C4A41A0B"]
+			description: [
+				"That was fucking hard right? or maybe not. I don't know if you fought the warden or not. If you did and you came out alive, good job. That thing is fucking terrifying. go to the portal in the middle of the ancient city and right-click the heart onto the frame and the portal should activate, If there's any sculk on the inner frame you won't be able to activate it, so be sure to clear the sculk. "
+				""
+				"Also take this, you deserve it, use it at a smithing table with netherite gear to make warden gear, which is going to be better. "
+			]
+			id: "7DC2573A322E556A"
+			rewards: [{
+				id: "3632C3C63AFB600D"
+				item: "deeperdarker:reinforced_echo_shard"
+				type: "item"
+			}]
+			subtitle: "Got the Heart"
+			tasks: [{
+				id: "60636061CF3CF3B4"
+				item: "deeperdarker:heart_of_the_deep"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7DC2573A322E556A"
+				"6FA42430E05023D7"
+			]
+			description: [
+				"As you can probably tell whenever you came in, this place is fucking terrifying. There's monsters here and also wardens can spawn so you have to stealth or fight them, or maybe you're fighting them so you can get full warden gear. "
+				""
+				"Be Careful and good luck. "
+			]
+			id: "40D9A8CE44908758"
+			subtitle: "You're Here!"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "273EB4C2F76A0A93"
+				title: "We made it"
+				type: "dimension"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["40D9A8CE44908758"]
+			description: [
+				"The Otherside currently only has one structure."
+				""
+				"This structure is the &6Ancient Temple, &fwhich generates in the &6Otherside Deeplands.&f The &6Ancient Temple &fconsists of various Deepslate and Sculk Stone blocks. The temple has 3 levels, an entrance level, top level, and bottom level. The bottom level is hidden and can be accessed by breaking through the 2x2 area of water in the center of the entrance level."
+				""
+				"{@pagebreak}"
+				"Each level generates with Ancient Vases and Chests full of Enchanted Books, Diamond Gear, Echo Shards, and more valuable loot. The bottom level of the Ancient Temple is littered with Sculk Stone Diamond Ore and various other treasures. There are 2 caged up cells on either side of the bottom level, inside these cells there are Skeleton Skulls. In 1 of the cells there is a chest that contains Cobwebs and the extremely rare Sculk Transmitter."
+			]
+			id: "71D430EDB9DB3604"
+			rewards: [{
+				id: "071E24A29746964D"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			subtitle: "The Ancient Temple"
+			tasks: [{
+				id: "52EEC7435CABF3B3"
+				structure: "deeperdarker:ancient_temple"
+				type: "structure"
+			}]
+			title: "The Loot"
+			x: 2.5d
+			y: -0.5d
+		}
+	]
+	title: "The Otherside"
+}

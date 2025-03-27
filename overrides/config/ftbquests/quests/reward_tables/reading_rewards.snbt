@@ -1,0 +1,11 @@
+{
+	id: "2EA76C273578E07A"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "farmersdelight:kelp_roll" }
+		{ item: "farmersdelight:roast_chicken" }
+		{ item: "minecraft:emerald" }
+	]
+	title: "Reading Rewards"
+}

@@ -1,0 +1,159 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "butchering"
+	group: "77CB9E6C44F4DBD4"
+	icon: {
+		Count: 1
+		id: "butchersdelight:cleaver"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "63CD194B384FC318"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"As you probably noticed, whenever you kill certain vanilla mobs, a carcass drops, this is because of the &6Butcher's Delight&r mod. This mod adds a little bit of realism to butchering animals. "
+				""
+				"If you want good food, remember that you can process the meats you get from butchering using the &6Farmer's Delight&r mod and make burgers or another food item."
+			]
+			id: "77E73EDABE3D0232"
+			tasks: [{
+				id: "0F56CCFF999D833F"
+				title: "Bodies?"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["77E73EDABE3D0232"]
+			description: ["In order to process the carcasses you'll need to make a cleaver. You can process stuff by placing it on the ground, or a table or something, but a &aMeat Hook&r is recommended"]
+			id: "74E4CDE15D12F399"
+			rewards: [{
+				id: "612F5A0940FCAAF1"
+				item: "butchersdelight:deadstrider"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0186DE29AF266A0F"
+				item: {
+					Count: 1
+					id: "butchersdelight:cleaver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["74E4CDE15D12F399"]
+			description: [
+				"The &aMeat Hook&r has high efficiency"
+				""
+				"It can be placed at the bottom of any solid block, it is used to place the animal carcasses so it can be cut into smaller parts"
+				""
+				" "
+				""
+				"NOTE: You must click secondary with a cleaver until you complete the process level (10 clicks)"
+				""
+				"Accepted animals: Cow, Sheep, Goat, Pig, Hogilin, llama."
+			]
+			id: "5FDD602124F5B1DC"
+			rewards: [
+				{
+					id: "1BB2DA53267E8F30"
+					item: "butchersdelight:dead_cow"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "03FA73CB05A78903"
+					item: "butchersdelight:deadsheep"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "4001AE2AD4FE374A"
+					item: "butchersdelight:deadpig"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					id: "06C50BEE33CFD07A"
+					item: {
+						Count: 1
+						id: "butchersdelight:cleaver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "351C0B618BA5D1D5"
+				item: "butchersdelight:hook"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["77E73EDABE3D0232"]
+			description: [
+				"It is placed on any type of campfire, you can place the carcasses of animals to cook them completely"
+				""
+				"You must place the animal's carcass on the campfire and wait for it to cook. "
+				"Accepted animals: cow, sheep, goat, pig. (chicken and rabbit planned)"
+				"once cooked, with right click with your hand"
+			]
+			id: "3F6A32DF5AD060F9"
+			rewards: [{
+				id: "59F33BEAA487EAB5"
+				item: "butchersdelight:dead_cow"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06FC5AD06530F3A3"
+				item: "butchersdelight:roaster"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["77E73EDABE3D0232"]
+			description: ["Some by-products such as skin or fur can be processed into a rack and shears to obtain more items"]
+			id: "03C1FD20E2918B44"
+			rewards: [
+				{
+					id: "43841C5D63FA5277"
+					item: "butchersdelight:cow_hide"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "482A1D964DE444C9"
+					item: "butchersdelight:sheephide"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0AE426EB20D8F99A"
+				item: "butchersdelight:rack"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+	]
+	title: "Butchering"
+}

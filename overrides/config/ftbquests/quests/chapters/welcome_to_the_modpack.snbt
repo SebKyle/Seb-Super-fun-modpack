@@ -1,0 +1,128 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "welcome_to_the_modpack"
+	group: "65930474F10080A4"
+	icon: {
+		Count: 1
+		id: "twilightforest:player_skull_candle"
+		tag: {
+			BlockEntityTag: {
+				CandleAmount: 1
+				CandleColor: 0
+			}
+		}
+	}
+	id: "5EDB6A0504C2ACA5"
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Sup fuckers. This is my first mod pack, probably the only one since I'm a little autistic and change my hyperfixation every so often. Use the questbook to go through stuff, it will be updated every so often as I play through it and get more familiarization with mods that are in here. you're probably playing this with me but if you aren't then enjoy things."]
+			id: "5BA5B0BA67A5CB75"
+			progression_mode: "linear"
+			rewards: [{
+				id: "64CA16E560BE8D25"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			shape: "square"
+			size: 3.0d
+			subtitle: "Read this"
+			tasks: [{
+				id: "130536472E1F3823"
+				title: "Basic Stuff"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BA5B0BA67A5CB75"]
+			description: [
+				"&dWhat exactly is in this modpack and what's the purpose of it?&r Well, I have a few friends that play minecraft, but they play vanilla and I play modded. There's a lot of modpack's i've been through and I really like automating and figuring out the very complicated modpacks like Skyblocks and the &6AllTheMods&r packs &c(you should check them out, and a big shoutout to the team there for the inspiration to make this stuff)&r, just because there's so much to do and learn. It hits that little tick for me, but my friends get overwhelmed by the sheer ammount of stuff going on, So I wanted to make a modpack that would satiate both of us. "
+				"{@pagebreak}"
+				"Without making it Overly complicated, I still wanted to be able to build massive factories or automation setups, but not have it be too much that you struggle to learn it. "
+				""
+				"The main mods in this pack are &6Create, Blue Skies, Ad Astra, The Aether, Twilight Forest, Farmer's delight, ETC. &f You get the Gist, There's a lot to do."
+				""
+				"This is my first attempt at this, so Don't fucking email me and call me an idiot. I will be improving this as it goes along, Or just abandoning it outright, We'll have to see :)"
+			]
+			id: "35BA0998A32994B8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2335539B0B12090F"
+				table_id: 3361774562512003194L
+				type: "choice"
+			}]
+			shape: "square"
+			size: 3.0d
+			subtitle: "Exactly what it says."
+			tasks: [{
+				id: "71F9C6DEBEA0C7C4"
+				title: "What's in the modpack?"
+				type: "checkmark"
+			}]
+			title: "What's in the modpack?"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35BA0998A32994B8"]
+			description: [
+				"That question is really up to you, But to avoid having to sit there and punch wood, I've already taken up enough of your time by you reading all of this, so please take some of my wood. There's a lot to do in this pack, If you want to do basic minecraft stuff, go ahead, Find a cave, Mine some Iron, Do whatever your heart desires "
+				""
+				"If you want to start on resource automation, head to the &6Create &fTab "
+				""
+				"{@pagebreak}"
+				"Everything is catagorized based off of what you would like to do, &6Exploration &f will outline the different diminsions and how to get there, There are some it isn't reccomended to go to immediately, but fuck it, do what you want, I'm not a cop. I'm just making this because it seemed like it would be fun to do, and you know what? I am having fun doing it. "
+				""
+				"Feel Free to look around the questbook and decide what you want to do, everything should be there"
+				""
+				"My reccomendation is going through &6Create&r and building some basic factories so you can stop worrying about mining for iron and other materials you might need. &dYouTube will be your best friend if you're new to the Create Mod"
+			]
+			id: "2B7393A5930DDB43"
+			rewards: [{
+				count: 6
+				id: "2ABE0802E1A8FAB6"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			shape: "square"
+			size: 3.0d
+			subtitle: "Uhhhh"
+			tasks: [{
+				id: "1B1AA9507DC491D6"
+				title: "Where Should I start?"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"If you'd like to contact me with bugs or suggestions on improvements, I made an email that you can well, email. "
+				""
+				"The email is &dSebsSuperFunModpack@gmail.com&r"
+			]
+			id: "5889020DC96F8BF4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "79EFEE4EF26DF794"
+				table_id: 98382437320343148L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				id: "293125EE1E742734"
+				title: "Contact Me"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+	]
+	title: "Welcome to the modpack"
+}

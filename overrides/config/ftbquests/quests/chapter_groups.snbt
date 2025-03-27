@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "65930474F10080A4", title: "Getting Started" }
+		{ id: "6BD94EB5F8108C50", title: "Create" }
+		{ id: "0B32FF226FE8C3EB", title: "Storage" }
+		{ id: "77CB9E6C44F4DBD4", title: "Farmer's delight" }
+		{ id: "09CAE66491538372", title: "Kill Mobs" }
+		{ id: "6D20797F116970EA", title: "Exploration and other Diminsions" }
+	]
+}
